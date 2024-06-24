@@ -6,9 +6,9 @@
 body {
     background: radial-gradient(circle, rgb(124, 30, 82), rgba(0, 0, 0) 90%);
     
-
+    margin: 0;
+    padding: 0;
     height: 100vh;  
-    display: flex;
     color: white;
     font-size: 24px;
     font-family: "Poppins";

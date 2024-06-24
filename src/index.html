@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -12,10 +13,35 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="stylesheet" href="input.css">
 </head>
-
 <body>
+
 <header>
-  <h1>maya</h1>
+<!-- SIDE MENU -->
+  <div id="menu-bar" class="bg-pink-600 w-[45%] h-[45vh] absolute right-0 rounded-tl-[30px] rounded-bl-[30px] shadow-[_0_0_10px_7px_rgba(219,73,172,0.3)] transition ease-in-out lg:hidden md:hidden hidden">
+    <button id="close"> <i class="fa-regular fa-circle-xmark ml-5 mt-4 text-black font-bold"></i></button>
+
+    <section id="side-info" class="text-center uppercase text-black font-medium mt-4">
+      <ul>
+        <li class="mb-3"><a id="home">home</a></li>
+        <li class="mb-3"><a id="about">about</a></li>
+        <li class="mb-3"><a id="products">products</a></li>
+        <li><a id="contact">contact</a></li>
+      </ul>
+    </section>
+  </div>
+<!-- SIDE MENU -->
+
+<!-- NAVBAR -->
+
+<nav>
+  <h1 class="text-center font-semibold mt-9 text-[30px]">Dev. <span class="text-pink-500 pl-2 uppercase">blog</span> </h1>
+
+  <button id="menu-btn"><i class="fa-solid fa-bars absolute right-0 top-10 mr-6 -z-40 lg:hidden md:hidden hidden"></i></button>
+  </div>
+
+  <div id="info"> </div>
+</nav>
+
 </header>
 
 <main>
