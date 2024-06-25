@@ -17,4 +17,4 @@ window.addEventListener("click", function(event) {
     if (event.target === bodyDiv) {
       menuBar.classList.add("hidden");
     }
-  });
+});

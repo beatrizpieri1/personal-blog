@@ -570,6 +570,10 @@ video {
   top: 2.5rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -622,12 +626,20 @@ video {
   height: 3;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-\[18vh\] {
   width: 18vh;
 }
 
 .w-\[25vh\] {
   width: 25vh;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -661,6 +673,21 @@ video {
 
 .bg-white\/\[\.20\] {
   background-color: rgb(255 255 255 / .20);
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-transparent {
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-black {
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #000 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .pl-2 {
@@ -726,6 +753,10 @@ video {
   text-underline-offset: 8px;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .shadow-\[_0_0_10px_7px_rgba\(219\2c 73\2c 172\2c 0\.3\)\] {
   --tw-shadow: 0 0 10px 7px rgba(219,73,172,0.3);
   --tw-shadow-colored: 0 0 10px 7px var(--tw-shadow-color);
@@ -769,18 +800,6 @@ body {
   text-decoration-line: underline;
 }
 
-@media (min-width: 640px) and (max-width: 890px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 540px) and (max-width: 720px) {
-  .ss\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .md\:block {
     display: block;
@@ -816,3 +835,4 @@ body {
     display: none;
   }
 }
+
